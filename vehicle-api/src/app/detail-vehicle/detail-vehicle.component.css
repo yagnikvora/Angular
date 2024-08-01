@@ -1,0 +1,15 @@
+.card {
+    background-color: #fff;
+    /* background-color: green; */
+    border-radius: 60px;
+    box-shadow: 0 10px 15px rgba(2, 72, 171, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+    cursor: "pointer";
+}
+
+.card:hover {
+    box-shadow: 0 15px 20px rgba(45, 3, 213, 0.266);
+    background-color: rgba(0, 3, 174, 0.149);
+    border-radius: 61px;
+}

@@ -1,0 +1,16 @@
+<div class="row">
+    <div *ngFor="let fac of faculties" class="card col-3">
+        <img [src]="fac.FacultyImage" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{ fac.FacultyName }}</h5>
+            <hr>
+            <p class="card-text">{{ fac.FacultyEducationQualification }}</p>
+            <hr>
+            <p class="card-text">{{ fac.FacultyDesignation }}</p>
+            <hr>
+            <p class="card-text">Working Since :- {{ fac.FacultyWorkingSince }}</p>
+            <hr>
+            <button (click)="deleteFac(fac)" class="btn btn-danger">Delete</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<form [formGroup]="myForm" (ngSubmit)="insertData()">
+    <table class="table table-stripped">
+        <tr>
+            <td>VehicleModel</td>
+            <td>:</td>
+            <td>
+                <input type="text" formControlName="VehicleModel" />
+            </td>
+        </tr>
+        <tr>
+            <td>VehicleMake</td>
+            <td>:</td>
+            <td>
+                <input type="text" formControlName="VehicleMake" />
+            </td>
+        </tr>
+        
+        <tr>
+            <td>VehicleYear</td>
+            <td>:</td>
+            <td>
+                <input type="text" formControlName="VehicleYear" />
+            </td>
+        </tr>
+        <tr>
+            <td>VehicleLastServiceDate</td>
+            <td>:</td>
+            <td>
+                <input type="text" formControlName="VehicleLastServiceDate" />
+            </td>
+        </tr>
+        <tr>
+            <td>VehicleMileage</td>
+            <td>:</td>
+            <td>
+                <input type="text" formControlName="VehicleMileage" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input class="btn btn-info" type="submit" *ngIf="id.length == 0" value="Add Vehicle">
+                <input class="btn btn-warning" type="submit" *ngIf="id.length > 0" value="Edit Vehicle">
+            </td>
+        </tr>
+    </table>
+</form>

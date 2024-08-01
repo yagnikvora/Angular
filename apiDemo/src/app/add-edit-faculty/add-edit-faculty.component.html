@@ -1,0 +1,45 @@
+<form [formGroup]="myForm" (ngSubmit)="insertData()">
+    <table class="table table-stripped">
+        <tr>
+            <td>FacultyName</td>
+            <td>:</td>
+            <td>
+                <input type="text" formControlName="FacultyName" />
+            </td>
+        </tr>
+        <tr>
+            <td>FacultyAge</td>
+            <td>:</td>
+            <td>
+                <input type="text" formControlName="FacultyAge" />
+            </td>
+        </tr>
+        <tr>
+            <td>FacultyDescription</td>
+            <td>:</td>
+            <td>
+                <input type="text" formControlName="FacultyDescription" />
+            </td>
+        </tr>
+        <tr>
+            <td>FacultyImage</td>
+            <td>:</td>
+            <td>
+                <input type="text" formControlName="FacultyImage" />
+            </td>
+        </tr>
+        <tr>
+            <td>FacultyDesignation</td>
+            <td>:</td>
+            <td>
+                <input type="text" formControlName="FacultyDesignation" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input class="btn btn-info" type="submit" *ngIf="id == -1" value="Add Faculty">
+                <input class="btn btn-warning" type="submit" *ngIf="id > 0" value="Edit Faculty">
+            </td>
+        </tr>
+    </table>
+</form>
